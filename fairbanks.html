@@ -1,146 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Trip to Fairbanks</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 70%;
-            margin: auto;
-        }
-    </style>
+  <title>Trip to Fairbanks</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container-fluid text-center">
-    <!--
-    <a class="btn btn-primary" href="index.html" role="button">Return to Main Menu</a>
-    -->
-    <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-        Return to Main Menu
-    </button></a>
-</div>
-<div class="container-fluid text-center">
-    <br>
-    <div id="myCarousel" class="carousel slide " data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-            <li data-target="#myCarousel" data-slide-to="7"></li>
-            <li data-target="#myCarousel" data-slide-to="8"></li>
-            <li data-target="#myCarousel" data-slide-to="9"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="images/Fairbanks/IMG_0085.jpg" alt="Fairbanks Airport" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Fairbanks Airport</h3>
-                    <p>Only two gates. Lots of local color</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0086.jpg" alt="Charging her iPhone" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Fairbanks Airport</h3>
-                    <p>Sydney charging her phone at one of the few power outlets</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0091.jpg" alt="The hotel" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Our hotel in Fairbanks</h3>
-                    <p>It hadn't snowed in a week, but there was still a lot on the ground</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0094.jpg" alt="Flying to Cold Foot" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Flying to Cold Foot</h3>
-                    <p>We followed the Dalton highway and the Trans-Alaska Pipeline</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0095.jpg" alt="Landing in Cold Foot" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>We land in Cold Foot</h3>
-                    <p>We landed above the artic circle and drove back to Fairbanks</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0742.jpg" alt="In front of the plane from Fairbanks" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Posing with our plane in Cold Foot</h3>
-                    <p>Almost 0 degrees Fahrenheit</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0097.jpg" alt="Driving back to Fairbanks" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Driving the Dalton Highway</h3>
-                    <p>Stopped for a photo on the way back to Fairbanks</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0758.jpg" alt="In front of the pipeline" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Standing in front of the Trans-Alaska Pipeline</h3>
-                    <p>Stopped for a photo on the way back to Fairbanks</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0765.jpg" alt="Sydney in front of the pipeline" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Sydney in front of the pipeline</h3>
-                    <p>It was a dry cold</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="images/Fairbanks/IMG_0768.jpg" alt="At the Artic Circle" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>At the Artic Circle</h3>
-                    <p>Just south of Cold Foot Alaska</p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+<!--
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+-->
+<!--
+Jumbotron div
+<div class="jumbotron">
+-->
+<div class="container-fluid bg-3 text-center">
+  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+        Return to Main Menu</button>
+  </a>
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0085.jpg">
+        <img src="images/Fairbanks/IMG_0085.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Fairbanks AK">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0086.jpg">
+      <img src="images/Fairbanks/IMG_0086.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ketchikan AK">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0091.jpg">
+      <img src="images/Fairbanks/IMG_0091.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Juneau AK">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0094.jpg">
+      <img src="images/Fairbanks/IMG_0094.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Tulips 1999">
+      </a>
+      <p></p>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0095.jpg">
+      <img src="images/Fairbanks/IMG_0095.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Happy 2nd Birthday">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0097.jpg">
+      <img src="images/Fairbanks/IMG_0097.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Our Trip to Port Townsend">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0099.jpg">
+      <img src="images/Fairbanks/IMG_0099.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0100.jpg">
+      <img src="images/Fairbanks/IMG_0100.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+  </div>
 </div>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0739.jpg">
+      <img src="images/Fairbanks/IMG_0739.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0740.jpg">
+      <img src="images/Fairbanks/IMG_0740.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0742.jpg">
+      <img src="images/Fairbanks/IMG_0742.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0756.jpg">
+      <img src="images/Fairbanks/IMG_0756.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0758.jpg">
+      <img src="images/Fairbanks/IMG_0758.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0765.jpg">
+      <img src="images/Fairbanks/IMG_0765.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0768.jpg">
+      <img src="images/Fairbanks/IMG_0768.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0087.jpg">
+      <img src="images/Fairbanks/IMG_0087.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0088.jpg">
+      <img src="images/Fairbanks/IMG_0088.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0090.jpg">
+      <img src="images/Fairbanks/IMG_0090.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0092.jpg">
+      <img src="images/Fairbanks/IMG_0092.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0093.jpg">
+      <img src="images/Fairbanks/IMG_0093.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0096.jpg">
+      <img src="images/Fairbanks/IMG_0096.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0098.jpg">
+      <img src="images/Fairbanks/IMG_0098.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0101.jpg">
+      <img src="images/Fairbanks/IMG_0101.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="images/Fairbanks/IMG_0102.jpg">
+      <img src="images/Fairbanks/IMG_0102.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
+      </a>
+      <p></p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+<div>
+  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+        Return to Main Menu</button>
+  </a>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Thanks for visiting Sydney's Album</p>
+<p id="demo"></p>
+  <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
+  </script>
+</footer>
 
 </body>
 </html>
-
 
