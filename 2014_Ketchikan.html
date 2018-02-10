@@ -5,206 +5,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/my-library.js"></script>
 </head>
 <body>
-<!--
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-<!--
-Jumbotron div
-<div class="jumbotron">
--->
 <div class="container-fluid bg-3 text-center">
   <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
         Return to Main Menu</button>
   </a><p></p>
    <div class="row">
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0051">
-        <img src="images/2014_Ketchikan/IMG_0051.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+        <img id="0051" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0051.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0051.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0052">
-      <img src="images/2014_Ketchikan/IMG_0052.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0052" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0052.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0052.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0053">
-      <img src="images/2014_Ketchikan/IMG_0053.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="IMG_0053.jpg">
-      </a>
+      <img id="0053" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0053.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="IMG_0053.jpg">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0053.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0060">
-      <img src="images/2014_Ketchikan/IMG_0060.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0060" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0060.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0060.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0061">
-      <img src="images/2014_Ketchikan/IMG_0061.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0061.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-    </div>
-    <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0064">
-      <img src="images/2014_Ketchikan/IMG_0064.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0064.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-    </div>
-    <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0080">
-      <img src="images/2014_Ketchikan/IMG_0080.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0080.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-    </div>
-    <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0081">
-      <img src="images/2014_Ketchikan/IMG_0081.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0081.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
   </div>
 </div>
 <div class="container-fluid bg-3 text-center">
   <div class="row">
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0515">
-        <img src="images/2014_Ketchikan/IMG_0515.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0061" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0061.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0515.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0044_2">
-        <img src="images/2014_Ketchikan/IMG_0044_2.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0064" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0064.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0044_2.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0507">
-        <img src="images/2014_Ketchikan/IMG_0507.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0080" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0080.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0507.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+    </div>
+    <div class="col-sm-3">
+      <img id="0081" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0081.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <p></p>
     </div>
   </div>
 </div>
 <div class="container-fluid bg-3 text-center">
   <div class="row">
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0048">
-      <img src="images/2014_Ketchikan/IMG_0048.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0515" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0515.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0048.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0049">
-      <img src="images/2014_Ketchikan/IMG_0049.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0044" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0044_2.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0049.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0057">
-      <img src="images/2014_Ketchikan/IMG_0057.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0507" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0507.JPG" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0057.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-    </div>
-    <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0058">
-      <img src="images/2014_Ketchikan/IMG_0058.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0058.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
   </div>
 </div>
 <div class="container-fluid bg-3 text-center">
   <div class="row">
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0063">
-      <img src="images/2014_Ketchikan/IMG_0063.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0048"onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0048.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0063.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0084">
-      <img src="images/2014_Ketchikan/IMG_0084.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0049" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0049.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0084.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0523">
-      <img src="images/2014_Ketchikan/IMG_0523.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
+      <img id="0057" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0057.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0523.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
     </div>
     <div class="col-sm-3">
-      <a class="hidden-xs" href="2014_Ketchikan_Larger.html#0490">
-      <img src="images/2014_Ketchikan/IMG_0490.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-        <img class="visible-xs" src="images/2014_Ketchikan/IMG_0490.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <img id="0058" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0058.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
       <p></p>
     </div>
   </div>
 </div>
-<div>
-  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-        Return to Main Menu</button>
-  </a>
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <img id="0063" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0063.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <img id="0084" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0084.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <img id="0523" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0523.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <p></p>
+    </div>
+    <div class="col-sm-3">
+      <img id="0490" onclick="Change2VerticalFormat(id)" src="images/2014_Ketchikan/IMG_0490.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+      <p></p>
+    </div>
+  </div>
+  <div>
+    <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+      Return to Main Menu</button>
+    </a>
+  </div>
 </div>
-
 <footer class="container-fluid text-center">
 <p id="demo"></p>
   <script>
