@@ -5,101 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/my-library.js"></script>
 </head>
 <body>
-<!--
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-<!--
-Jumbotron div
-<div class="jumbotron">
--->
 <div class="container-fluid bg-3 text-center">
   <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
         Return to Main Menu</button>
   </a><p></p>
   <div class="row">
     <div class="col-sm-3">
-      <a href="images/July1999/990704-015.jpg">
-        <img src="images/July1999/990704-015.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Fairbanks AK">
-      </a>
+      <img id="990704-015" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-015.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Fairbanks AK">
       <p></p>
     </div>
     <div class="col-sm-3">
-      <a href="images/July1999/990704-016.jpg">
-      <img src="images/July1999/990704-016.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ketchikan AK">
-      </a>
+      <img id="990704-016" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-016.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ketchikan AK">
       <p></p>
     </div>
     <div class="col-sm-3">
-      <a href="images/July1999/990704-018.jpg">
-      <img src="images/July1999/990704-018.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Juneau AK">
-      </a>
+      <img id="990704-018" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-018.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Juneau AK">
       <p></p>
     </div>
     <div class="col-sm-3">
-      <a href="images/July1999/990704-019.jpg">
-      <img src="images/July1999/990704-019.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Tulips 1999">
-      </a>
+      <img id="990704-019" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-019.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Tulips 1999">
       <p></p>
     </div>
   </div>
 </div><br>
-
 <div class="container-fluid bg-3 text-center">
-  <!--
-  <h3>Browse Sydney's Albums</h3><br>
-  -->
   <div class="row">
     <div class="col-sm-3">
-      <a href="/images/July1999/990704-024.jpg">
-      <img src="images/July1999/990704-024.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Happy 2nd Birthday">
-      </a>
+    <img id="99704-024" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-024.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Happy 2nd Birthday">
+    <p></p>
+    </div>
+    <div class="col-sm-3">
+      <img id="990704-027" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-027.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Our Trip to Port Townsend">
       <p></p>
     </div>
     <div class="col-sm-3">
-      <a href="images/July1999/990704-027.jpg">
-      <img src="images/July1999/990704-027.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Our Trip to Port Townsend">
-      </a>
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <a href="images/July1999/990704-028.jpg">
-      <img src="images/July1999/990704-028.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
-      </a>
+      <img id="990704-028" onclick="Change2VerticalFormat(id)" src="images/July1999/990704-028.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Image">
       <p></p>
     </div>
   </div>
-  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-        Return to Main Menu</button>
-  </a>
+  <div>
+    <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+      Return to Main Menu</button>
+    </a>
+  </div>
 </div>
 <p></p>
 <footer class="container-fluid text-center">
@@ -109,6 +63,5 @@ Jumbotron div
     document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
   </script>
 </footer>
-
 </body>
 </html>
