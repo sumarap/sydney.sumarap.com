@@ -5,4 +5,4 @@
 #aws s3 cp . s3://sydney.sumarap.com --recursive --exclude ".git/*" --exclude "*.sh" --exclude ".DS*" --exclude ".psd"
 
 # To update the cloudfront distrubution (pushes changes to edge locations).
-#aws cloudfront update-distribution --id E3957D9TR3SZCP --default-root-object index.html
+aws cloudfront update-distribution --id E3957D9TR3SZCP --default-root-object index.html
