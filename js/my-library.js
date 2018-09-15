@@ -9,16 +9,9 @@ function Change2VerticalFormat(image_id){
 }
 
 function imageLoaded() {
-  // Turn on loader image
-  //document.getElementById("loaderCase").style.display = 'block';
-  //document.getElementById("loader").style.display = 'block';
-  // Turn off div with loaded images
-  //document.getElementById("content").style.display = 'none';
-  //setTimeout(function(){
-    // Turn off loader image
-    document.getElementById("loaderCase").style.display = 'none';
-    document.getElementById("loader").style.display = 'none';
-    // Turn on div with loaded images
-    document.getElementById("content").style.display = 'block';
-  //},3000);
+  // Turn off loader image
+  document.getElementById("loaderCase").style.display = 'none';
+  document.getElementById("loader").style.display = 'none';
+  // Turn on div with loaded images
+  document.getElementById("content").style.display = 'block';
 }
