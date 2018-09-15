@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loader Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="imageLoaded()">
+  <!-- Some dummy content to hide and then display to simulate
+       being loaded0 -->
+  <div id="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor suscipit elit, ut tempor augue mattis id. Morbi ullamcorper vitae libero vitae euismod. Nulla iaculis ipsum et ligula vehicula, vulputate hendrerit ex dapibus. Morbi quis dictum risus. In egestas, quam quis blandit interdum, dolor urna porttitor libero, eget tempor eros tellus ultricies velit. Suspendisse pretium vitae lacus at tincidunt. Curabitur aliquet augue tellus, eget bibendum ante accumsan eu. Pellentesque leo sapien, accumsan sed vulputate nec, pulvinar sed lectus. Nunc pretium turpis non metus mattis, a pharetra enim vulputate. Pellentesque dapibus elementum nunc eget placerat. Vestibulum euismod imperdiet nibh, sed fringilla augue tempor lacinia.</p>
+
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent eget ex ut lacus accumsan placerat. Donec tempor leo vel enim dictum rutrum. Donec in malesuada enim. Vivamus id odio a nunc consectetur pharetra ac id dolor. Curabitur ipsum nulla, lobortis quis dictum nec, vestibulum non elit. Nullam odio leo, finibus ac imperdiet eget, scelerisque eget mi. Maecenas dictum dolor ipsum, a vestibulum elit condimentum eu.</p>
+
+    <p>Nam sapien leo, mollis vel neque cursus, faucibus mollis orci. Suspendisse potenti. Aliquam pellentesque a erat sed hendrerit. Integer vitae dolor non risus tempus congue vitae ac dui. Vivamus risus erat, accumsan id est nec, pharetra vehicula velit. Aliquam libero ex, placerat sed orci et, pellentesque luctus elit. Duis ornare posuere purus. Curabitur eu mi vitae nisi vehicula sagittis a et diam. Nullam facilisis dui at tempus tristique. Etiam eget pharetra elit, non auctor nisi. Sed pulvinar, sapien sit amet luctus efficitur, est augue cursus enim, a iaculis erat ex id tortor. Integer tempus lorem aliquet, tristique ex ac, dignissim leo. Pellentesque ornare tincidunt ornare. Vivamus sit amet purus velit. Duis interdum ipsum sem.</p>
+
+    <p>Proin et arcu id eros pellentesque maximus. In ut elementum arcu. Aliquam placerat sodales nulla a volutpat. Aenean accumsan facilisis erat quis ultricies. Etiam nec odio id urna tempor suscipit. Quisque non eleifend augue, eget congue libero. Fusce bibendum ipsum lacus, in suscipit leo porta a. Nunc sit amet pellentesque quam, ut imperdiet magna. Phasellus auctor libero elit, non blandit felis fringilla vitae. Duis nibh sem, fringilla et ultricies vitae, sagittis a erat. Fusce id enim nec sem venenatis ultricies non sit amet purus. Curabitur pharetra vestibulum nisl, at interdum felis rutrum sit amet. Sed consectetur arcu at dui dignissim, vitae dapibus nulla vestibulum. Aenean sed arcu hendrerit, tempus nisi eget, varius urna. Sed ac dignissim turpis. In hac habitasse platea dictumst.</p>
+
+    <p>Sed a urna quis odio pharetra convallis sed quis nisl. Etiam feugiat arcu eros, sit amet feugiat nunc consectetur eu. In vel malesuada nunc. Sed eleifend ipsum arcu, sed tristique lorem elementum porta. Etiam odio massa, maximus non pharetra fringilla, posuere eu est. Duis mattis condimentum metus fermentum efficitur. Donec dictum lectus turpis. Cras pharetra vitae mi ac varius. Maecenas fringilla tortor non vehicula convallis. Praesent sagittis, lorem in efficitur maximus, justo tellus scelerisque sapien, in dictum ante nisl ac purus. Praesent feugiat metus orci, ut ultrices odio tristique ac. Etiam eu odio vel arcu porttitor auctor at ac leo. Ut pellentesque ante neque, sit amet facilisis odio pulvinar ac. Aliquam interdum tincidunt nibh non egestas. Pellentesque nisi erat, vulputate et metus in, tincidunt tempus nulla.</p>
+  </div>
+
+  <!-- the loaderCase provides a way to move the loader images
+       lower into the viewport (so it's not right up at the top) -->
+  <div class="loaderCase">
+    <div id="loader" class="loader"></div>
+  </div>
+
+ <script>
+ function imageLoaded() {
+   document.getElementById("loader").style.display = 'block';
+   document.getElementById("content").style.display = 'none';
+   setTimeout(function(){
+     //alert("Image is loaded");
+     // Turn off loader image
+     document.getElementById("loader").style.display = 'none';
+     // Turn on div with loaded images
+     document.getElementById("content").style.display= 'block';
+   }, 2000);
+ }
+ </script>
+</body>
+</html>

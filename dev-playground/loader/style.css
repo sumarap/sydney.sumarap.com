@@ -1,0 +1,37 @@
+
+.loaderCase {
+  margin-top: 10%;
+}
+.loader {
+    display: Block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid Blue;
+    border-right: 2px solid LightGrey;
+    border-bottom: 2px solid LightGrey;
+    border-left: 2px solid LightGrey;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loadingText {
+  display: Block;
+  margin-left: 46%;
+}
+h2 {
+  color: Blue;
+}
+
+#content {
+  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+}
