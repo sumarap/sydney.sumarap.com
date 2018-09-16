@@ -13,16 +13,21 @@
   <script>
     window.onload=imageLoaded;
   </script>
-  <link rel="icon"             type="image.jpg" href="images/sydney_57x57.jpg">
-  <link rel="apple-touch-icon" type="image.jpg" href="images/sydney_57x57.jpg">
-  <link rel="apple-touch-icon" type="image.jpg" href="images/sydney_72x72.jpg">
-  <link rel="apple-touch-icon" type="image.jpg" href="images/sydney_114x114.jpg">
+  <link rel="icon"             type="image/jpg" href="images/sydney_57x57.jpg">
+  <link rel="apple-touch-icon" type="image/jpg" href="images/sydney_57x57.jpg">
+  <link rel="apple-touch-icon" type="image/jpg" href="images/sydney_72x72.jpg">
+  <link rel="apple-touch-icon" type="image/jpg" href="images/sydney_114x114.jpg">
+  <link rel="shortcut icon"    href="favicon.ico" >
 </head>
 
 <body>
 
 <div>
-  <img src="images/SydneyHeader.jpg" class="img-responsive" >
+  <!-- Use deelay.me to mimic slow loading images (for testing) -->
+  <!-- <img src="http://deelay.me/10000/http://cdn.sumarap.com/"> -->
+  <div id="siteBanner">
+    <img src="images/SydneyHeader.jpg" class="img-responsive" >
+  </div>
   <div class="container text-center" >
     <h1>Sydney</h1>
     <p>Welcome to Sydney's Photo Albums</p>

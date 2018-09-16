@@ -6,11 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/my-library.js"></script>
+  <script>
+    window.onload=imageLoaded;
+  </script>
 </head>
 <body>
+
+<!-- the loaderCase provides a way to move the loader images
+     lower into the viewport (so it's not right up at the top) -->
+<div id="loaderCase">
+  <div id="loader" class="loader"></div>
+</div>
+
+<!-- The content div surrounds ALL content on first page. We hide it until the
+     page is loaded, and display a spinner until it loads. -->
+<div id='content'>
+
 <div class="container-fluid bg-3 text-center">
   <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
     Return to Main Menu</button>
@@ -63,6 +78,7 @@
   </script>
 </footer>
 
+</div> <!-- id='content' (for showing and hidding content while loading) -->
+
 </body>
 </html>
-
