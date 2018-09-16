@@ -10,8 +10,10 @@ function Change2VerticalFormat(image_id){
 
 function imageLoaded() {
   // Turn off loader image
-  document.getElementById("loaderCase").style.display = 'none';
-  document.getElementById("loader").style.display = 'none';
+  if (document.getElementById("loaderCase") && document.getElementById("loader")) {
+    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loaderCase").style.display = 'none';
+  }
   // Turn on div with loaded images
   if (document.getElementById("siteBanner")){
     document.getElementById("siteBanner").style.display = 'block';
