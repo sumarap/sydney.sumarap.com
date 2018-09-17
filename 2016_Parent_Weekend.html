@@ -10,155 +10,153 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/my-library.js"></script>
-  <script>
-    window.onload=imageLoaded;
-  </script>
+  <script>window.onload=imageLoaded;</script>
 </head>
 <body>
 
-<!-- the loaderCase provides a way to move the loader images
-     lower into the viewport (so it's not right up at the top) -->
-<div id="loaderCase">
-  <div id="loader" class="loader"></div>
-</div>
+  <!-- the loaderCase provides a way to move the loader images
+       lower into the viewport (so it's not right up at the top) -->
+  <div id="loaderCase">
+    <div id="loader" class="loader"></div>
+  </div>
 
-<!-- The content div surrounds ALL content on first page. We hide it until the
-     page is loaded, and display a spinner until it loads. -->
-<div id='content'>
+  <!-- The content div surrounds ALL content on first page. We hide it until the
+       page is loaded, and display a spinner until it loads. -->
+  <div id='content'>
 
-<div class="container-fluid bg-3 text-center">
-  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-        Return to Main Menu</button>
-  </a><p></p>
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0839" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0839_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Penny resting up">
-      <p>Dinner at the Yardhouse</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0843" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0843_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Ryan at Olympic National Forest">
-      <p>Breakfast at the Friendly Toast</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0852" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0852_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ruby Beach">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0860" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0860_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0894" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0894_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Keith, Sydney and Arlene at Ruby Beach">
-      <p>Museum of Science</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0895" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0895_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ryan, Sydney and Arlene at Ruby Beach">
-      <p>Charles River from the Museum</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0896" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0896_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Penny testing the water">
-      <p>The patio on the top of the hotel</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0897" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0897_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ruby Beach">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0818" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0818_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ryan, Sydney and Penny">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0829" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0829_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p>At Barnes and Noble</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0830" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0830_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0838" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0838_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0841" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0841_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0846" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0846_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p>Pre-Halloween in Salem</p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0847" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0847_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0848" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0848_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0849" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0849_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0850" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0850_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0861" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0861_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0864" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0864_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p>New iPhone screen at the Apple store</p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0889" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0889_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0892" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0892_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0893" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0893_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p>Faraday Cage and Van der Graaf generators</p>
-    </div>
-  </div>
-  <div>
+  <div class="container-fluid bg-3 text-center">
     <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-      Return to Main Menu</button>
-    </a>
+          Return to Main Menu</button>
+    </a><p></p>
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0839" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0839_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Penny resting up">
+        <p>Dinner at the Yardhouse</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0843" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0843_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Ryan at Olympic National Forest">
+        <p>Breakfast at the Friendly Toast</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0852" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0852_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ruby Beach">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0860" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0860_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
   </div>
-</div>
-<footer class="container-fluid text-center">
-<p id="demo"></p>
-  <script>
-    var d = new Date();
-    document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
-  </script>
-</footer>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0894" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0894_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Keith, Sydney and Arlene at Ruby Beach">
+        <p>Museum of Science</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0895" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0895_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ryan, Sydney and Arlene at Ruby Beach">
+        <p>Charles River from the Museum</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0896" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0896_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Sydney and Penny testing the water">
+        <p>The patio on the top of the hotel</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0897" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0897_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ruby Beach">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0818" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0818_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="Ryan, Sydney and Penny">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0829" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0829_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p>At Barnes and Noble</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0830" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0830_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0838" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0838_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0841" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0841_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0846" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0846_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p>Pre-Halloween in Salem</p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0847" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0847_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0848" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0848_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0849" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0849_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0850" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0850_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0861" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0861_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0864" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0864_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p>New iPhone screen at the Apple store</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0889" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0889_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0892" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0892_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0893" onclick="Change2VerticalFormat(id)" src="images/2016_Parent_Weekend/thumbnails/IMG_0893_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p>Faraday Cage and Van der Graaf generators</p>
+      </div>
+    </div>
+    <div>
+      <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+        Return to Main Menu</button>
+      </a>
+    </div>
+  </div>
+  <footer class="container-fluid text-center">
+  <p id="demo"></p>
+    <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
+    </script>
+  </footer>
 
-</div> <!-- id='content' (for showing and hidding content while loading) -->
+  </div> <!-- id='content' (for showing and hidding content while loading) -->
 
 </body>
 </html>

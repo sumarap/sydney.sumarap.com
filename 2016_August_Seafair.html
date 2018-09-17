@@ -10,75 +10,73 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/my-library.js"></script>
-  <script>
-    window.onload=imageLoaded;
-  </script>
+  <script>window.onload=imageLoaded;</script>
 </head>
 <body>
 
-<!-- the loaderCase provides a way to move the loader images
-     lower into the viewport (so it's not right up at the top) -->
-<div id="loaderCase">
-  <div id="loader" class="loader"></div>
-</div>
-
-<!-- The content div surrounds ALL content on first page. We hide it until the
-     page is loaded, and display a spinner until it loads. -->
-<div id='content'>
-
-<div class="container-fluid bg-3 text-center">
-  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-    Return to Main Menu</button>
-  </a><p></p>
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0719" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0719_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0720" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0720_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0727" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0727_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0723" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0723_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
+  <!-- the loaderCase provides a way to move the loader images
+       lower into the viewport (so it's not right up at the top) -->
+  <div id="loaderCase">
+    <div id="loader" class="loader"></div>
   </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="0725" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0725_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0726" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0726_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="0722" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0722_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-  <div>
+
+  <!-- The content div surrounds ALL content on first page. We hide it until the
+       page is loaded, and display a spinner until it loads. -->
+  <div id='content'>
+
+  <div class="container-fluid bg-3 text-center">
     <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
       Return to Main Menu</button>
-    </a>
+    </a><p></p>
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0719" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0719_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0720" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0720_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0727" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0727_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0723" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0723_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
   </div>
-</div>
-<footer class="container-fluid text-center">
-<p id="demo"></p>
-  <script>
-    var d = new Date();
-    document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
-  </script>
-</footer>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="0725" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0725_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0726" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0726_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="0722" onclick="Change2VerticalFormat(id)" src="images/2016_August_Seafair/thumbnails/IMG_0722_tn.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+    <div>
+      <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+        Return to Main Menu</button>
+      </a>
+    </div>
+  </div>
+  <footer class="container-fluid text-center">
+  <p id="demo"></p>
+    <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
+    </script>
+  </footer>
 
-</div> <!-- id='content' (for showing and hidding content while loading) -->
+  </div> <!-- id='content' (for showing and hidding content while loading) -->
 
 </body>
 </html>

@@ -10,231 +10,229 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/my-library.js"></script>
-  <script>
-    window.onload=imageLoaded;
-  </script>
+  <script>window.onload=imageLoaded;</script>
 </head>
 <body>
 
-<!-- the loaderCase provides a way to move the loader images
-     lower into the viewport (so it's not right up at the top) -->
-<div id="loaderCase">
-  <div id="loader" class="loader"></div>
-</div>
+  <!-- the loaderCase provides a way to move the loader images
+       lower into the viewport (so it's not right up at the top) -->
+  <div id="loaderCase">
+    <div id="loader" class="loader"></div>
+  </div>
 
-<!-- The content div surrounds ALL content on first page. We hide it until the
-     page is loaded, and display a spinner until it loads. -->
-<div id='content'>
+  <!-- The content div surrounds ALL content on first page. We hide it until the
+       page is loaded, and display a spinner until it loads. -->
+  <div id='content'>
 
-<div class="container-fluid bg-3 text-center">
-  <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-        Return to Main Menu</button>
-  </a><p></p>
-  <div class="row">
-    <div class="col-sm-3">
-        <img id="990311-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990311-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990311-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990311-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990312-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990312-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div><br>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990312-008" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-008.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990312-010" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-010.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990312-012" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-012.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990312-014" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-014.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990313-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-004" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-004.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990313-006" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-006.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-007" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-007.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-009" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-009.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-011" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-011.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990313-012" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-012.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-015" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-015.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-016" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-016.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-019" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-019.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990313-020" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-020.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-022" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-022.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-023" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-023.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-025" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-025.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990313-027" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-027.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-028" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-028.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-030" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-030.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-031" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-031.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990314-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990314-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990314-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990314-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990316-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990316-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990317-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990317-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990317-006" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-006.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990319-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990319-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <img id="990312-007" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-007.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-    </div>
-    <div class="col-sm-3">
-      <img id="990313-017" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-017.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
-      </a>
-      <p></p>
-    </div>
-  </div>
-  <div>
+  <div class="container-fluid bg-3 text-center">
     <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
-      Return to Main Menu</button>
-    </a>
+          Return to Main Menu</button>
+    </a><p></p>
+    <div class="row">
+      <div class="col-sm-3">
+          <img id="990311-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990311-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990311-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990311-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990312-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990312-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div><br>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990312-008" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-008.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990312-010" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-010.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990312-012" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-012.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990312-014" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-014.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
   </div>
-</div>
-<p></p>
-<footer class="container-fluid text-center">
-<p id="demo"></p>
-  <script>
-    var d = new Date();
-    document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
-  </script>
-</footer>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990313-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-004" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-004.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990313-006" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-006.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-007" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-007.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-009" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-009.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-011" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-011.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990313-012" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-012.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-015" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-015.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        </a>
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-016" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-016.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-019" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-019.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990313-020" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-020.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-022" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-022.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-023" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-023.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-025" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-025.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990313-027" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-027.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-028" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-028.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-030" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-030.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-031" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-031.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990314-002" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990314-002.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990314-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990314-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990316-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990316-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990317-001" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-001.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990317-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990317-006" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990317-006.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        </a>
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990319-003" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990319-003.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        </a>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img id="990312-007" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990312-007.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        </a>
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <img id="990313-017" onclick="Change2VerticalFormat(id)" src="images/DisneyWorld1999/990313-017.jpg" class="img-responsive, img-thumbnail" style="width:100%" alt="">
+        </a>
+        <p></p>
+      </div>
+    </div>
+    <div>
+      <a href="index.html"><button type="button" id="MainMenu" data-loading-text="Main Menu" class="btn btn-lg btn-primary btn-block" autocomplete="off">
+        Return to Main Menu</button>
+      </a>
+    </div>
+  </div>
+  <p></p>
+  <footer class="container-fluid text-center">
+  <p id="demo"></p>
+    <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = "&copy; " + d.getFullYear();
+    </script>
+  </footer>
 
-</div> <!-- id='content' (for showing and hidding content while loading) -->
+  </div> <!-- id='content' (for showing and hidding content while loading) -->
 
 </body>
 </html>

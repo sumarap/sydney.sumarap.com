@@ -9,6 +9,7 @@ function Change2VerticalFormat(image_id){
 }
 
 function imageLoaded() {
+  console.log('inside imageLoaded()');
   // Turn off loader image
   if (document.getElementById("loaderCase") && document.getElementById("loader")) {
     document.getElementById("loader").style.display = 'none';
